@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito Sans', sans-serif;
+	color: rgba(214, 246, 236, 1);
+}
+
+body{
+	background-image: url('wallpaperflare.com_wallpaper (1).jpg');
+	background-size: contain;
+	background-position-y: center;
+	background-repeat: no-repeat;
+	backdrop-filter: blur(1.7px);
+}
+.hero{
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	
+}
+
+.js-wrapper{
+	vertical-align: middle;
+	width: 450px;
+	height: 25vh;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 0 0 20px rgba(6, 245, 128, 1);
+}
+
+.js-year-date-wrappper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: -10px;
+}
+
+.js-century-day{
+	margin-right: 20px;
+}
+
+.js-time-wrapper{
+	display: flex;
+	width: fit-content;
+	font-size: 4rem;
+	position: relative;
+	backdrop-filter: 0 0 10px rgba(240, 200, 210, 1.0);
+}
+
+
+.hours::after{
+	content: 'HOURS';
+	position: absolute;
+	bottom: -12px;
+	left: 27%;
+	transform: translateX(-67px);
+	font-size:  10px;
+}
+
+.minutes::after{
+	content: 'MINUTES';
+	position: absolute;
+	bottom: -12px;
+	left: 50%;
+	transform: translateX(-22px);
+	font-size:  10px;
+}
+
+
+.seconds::after{
+	content: 'SECONDS';
+	position: absolute;
+	bottom: -12px;
+	left: 63%;
+	transform: translateX(54px);
+	font-size:  10px;
+}
+
+
+
+.colon-seperator{
+	margin-right: 15px ;
+	margin-left: 15px;
+}
+
+.time-is-ticking{
+	transform: translateY(32px);
+	font-size: 10px;
+}
+
+
+@media (max-width: 650px){
+	.js-time-wrapper{
+		font-size: 3.6rem;
+	}
+
+	.hours::after{
+	content: 'HOURS';
+	position: absolute;
+	bottom: -12px;
+	left: 27%;
+	transform: translateX(-67px);
+	font-size: 5px;
+	}
+
+	.minutes::after{
+	content: 'MINUTES';
+	position: absolute;
+	bottom: -12px;
+	left: 49%;
+	transform: translateX(-22px);
+	font-size:  10px;
+}
+
+	.seconds::after{
+	content: 'SECONDS';
+	position: absolute;
+	bottom: -12px;
+	left: 61%;
+	transform: translateX(54px);
+	font-size:  10px;
+}
+
+	body{
+		background-image: url('wp2674021-anime-dark-wallpaper.jpg');
+		background-size: cover;
+		background-position-y: center;
+		background-repeat: no-repeat;
+		backdrop-filter: blur(0.7px);
+	}
+}
